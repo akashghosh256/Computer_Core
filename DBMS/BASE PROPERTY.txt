@@ -1,0 +1,22 @@
+"BASE" is an acronym that stands for Basically Available, Soft state, and Eventually consistent. It describes a set of properties 
+often associated with NoSQL databases. Here's what each term means:
+
+Basically Available: This means that the system remains operational and provides basic 
+functionality even in the presence of failures or partitioning. In other words, the system is designed to be available for use, 
+even if it means sacrificing consistency temporarily.
+
+Soft state: NoSQL databases often prioritize availability and performance over strict consistency. Soft state refers 
+to the idea that the state of the system may change over time, even without any input or activity. This characteristic 
+allows for more flexible data models and eventual consistency.
+
+Eventually consistent: NoSQL databases aim to achieve eventual consistency, meaning that after a 
+certain period of time and in the absence of further updates, all replicas or nodes in the distributed system will converge 
+to a consistent state. In other words, the system guarantees that the data will eventually become consistent, but there may be 
+a temporary period of inconsistency.
+
+These properties reflect a trade-off between consistency and availability, where NoSQL databases prioritize availability and partition tolerance 
+over immediate consistency. It's important to note that not all NoSQL databases strictly adhere to the BASE properties, and the level 
+of consistency and availability can vary depending on the specific implementation and configuration of the database. 
+
+https://www.geeksforgeeks.org/acid-properties-in-dbms/
+https://www.geeksforgeeks.org/base-properties-in-dbms/
